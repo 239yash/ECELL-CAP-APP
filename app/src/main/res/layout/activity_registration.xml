@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lrback"
+    tools:context=".RegistrationActivity">
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="700dp"
+        android:background="@drawable/regcardin"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/notfound"
+            android:layout_width="350dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:foregroundGravity="center"
+            android:scaleX="0.98"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/regnotfound" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="320dp"
+            android:fontFamily="@font/open_sans_semibold"
+            android:text="Kindly, Send us your E-mail ID\nto register yourself as a\nClass Representative\nfor E - CELL RGPV !!"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:lineHeight="28sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/regemailid"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:layout_width="300dp"
+            android:layout_height="65dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="470dp"
+            android:textColorHint="@android:color/black"
+            app:boxCornerRadiusBottomEnd="15dp"
+            app:boxCornerRadiusBottomStart="15dp"
+            app:boxCornerRadiusTopEnd="15dp"
+            app:boxCornerRadiusTopStart="15dp"
+            app:boxStrokeColor="#A6EFF3"
+            app:errorEnabled="true"
+            app:helperTextTextAppearance="@color/colorBlack">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email Id"
+                android:textColorHint="@color/colorBlack" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="55dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="540dp"
+            android:background="@drawable/regnotbutton"
+            android:fontFamily="@font/open_sans_condensed_bold"
+            android:text="send Email Id"
+            android:textAlignment="center"
+            android:textColor="@color/colorDark"
+            android:textSize="24sp">
+
+        </Button>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="675dp"
+            android:fontFamily="@font/open_sans_condensed_bold"
+            android:text="App Development Department, E-CELL RGPV"
+            android:textAlignment="center"
+            android:textColor="#FF1C1C"
+            android:textSize="16sp" />
+
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
